@@ -107,8 +107,6 @@ On sauvegarde ce rapport avec le titre **404 Errors Evolution — 7 Days** et on
 
 Le dashboard permet la surveillance visuelle. Mais un analyste ne peut pas regarder un dashboard 24h/24. On configure une alerte pour être notifié automatiquement.
 
-Dans Splunk : **Save As > Alert** depuis la recherche.
-
 **Recherche de l'alerte :**
 
 
@@ -117,6 +115,8 @@ index=main sourcetype=access_combined_wcookie status=404
 | stats count by clientip
 | where count > 15
 ```
+Dans Splunk : **Save As > Alert** depuis la recherche.
+
 
 [![Configuration de l'alerte — Alert 404 Recognition Detection](28.png)](28.png)
 
