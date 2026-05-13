@@ -174,3 +174,7 @@ Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réu
 
 Le dataset utilisé est le `tutorialdata.zip` officiel de Splunk, disponible gratuitement ici :
 [Télécharger tutorialdata.zip](https://docs.splunk.com/images/Tutorial/tutorialdata.zip)
+
+---
+
+*© Paulcyber06 — Tous droits réservés. Reproduction interdite sans autorisation.*
