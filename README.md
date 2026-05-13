@@ -138,6 +138,7 @@ Dans Splunk : **Save As > Alert** depuis la recherche.
 | Suppress results containing field value | clientip |
 | Action | Add to Triggered Alerts — severity Medium |
 
+Le Dashboard est maintenant prêt à fonctionner.
 
 ---
 
