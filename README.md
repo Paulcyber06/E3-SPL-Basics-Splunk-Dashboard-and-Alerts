@@ -42,7 +42,7 @@ index=main sourcetype=access_combined_wcookie status=404
 
 [![Création de la recherche Top 10 IPs](1.png)](1.png)
 
-Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404 — les candidates les plus suspectes pour une activité de reconnaissance.
+Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404 — les candidates les plus suspectes pour une activité de reconnaissance. On sauvegarde ce rapport via **Save As > Report** avec le titre **Top 10 IPs — 404 Errors**.
 
 [![Tableau Top 10 IPs — 404 Errors](2.png)](2.png)
 
@@ -52,7 +52,7 @@ Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404
 
 ## 3. Sauvegarde et création du dashboard
 
-On sauvegarde ce rapport via **Save As > Report** avec le titre **Top 10 IPs — 404 Errors**, puis on l'ajoute au dashboard via **Add to Dashboard > New Dashboard**.
+On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 
 [![Sauvegarde dans le dashboard Web Reconnaissance](3.png)](3.png)
 
