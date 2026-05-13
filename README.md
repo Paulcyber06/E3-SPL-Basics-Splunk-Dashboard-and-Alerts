@@ -1,4 +1,4 @@
-# Épisode 3 — Splunk : Analyse Comportementale d'une IP Suspecte
+# Épisode 4 — Splunk : Dashboard de Surveillance & Alertes
 
 > Face à la persistance des attaques contre **Buttercup Games**, le SOC automatise la surveillance — dashboard de monitoring et alerte en temps réel pour ne plus jamais manquer une activité suspecte.
 
