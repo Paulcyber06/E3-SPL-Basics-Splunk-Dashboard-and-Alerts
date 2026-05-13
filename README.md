@@ -1,6 +1,6 @@
 # SPL Basics — Épisode 3 : Dashboard de Surveillance & Alertes Automatiques
 
-> Suite des Épisodes 1 et 2. Après avoir détecté une IP suspecte et analysé son comportement, nous allons maintenant mettre en place une **surveillance automatique** : un dashboard SOC et une alerte qui se déclenche sans intervention manuelle.
+> Face à la persistance des attaques contre **Buttercup Games**, le SOC automatise la surveillance — dashboard de monitoring et alerte en temps réel pour ne plus jamais manquer une activité suspecte.
 
 ---
 
@@ -123,7 +123,6 @@ Dans Splunk : **Save As > Alert** depuis la recherche.
 | Paramètre | Valeur |
 |-----------|--------|
 | Title | Alert - 404 Reconnaissance Detection |
-| Description | Detects source IPs generating more than 15 HTTP 404 errors — potential web reconnaissance activity |
 | Permissions | Shared in App |
 | Alert type | Scheduled |
 | Schedule | Run every hour |
@@ -167,11 +166,7 @@ Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux e
 | Alerte automatique | Notification en temps réel sans surveillance permanente |
 | Throttle par IP | Zéro spam — une notification par IP par heure |
 
-Cette série de 3 articles couvre le cycle complet d'une investigation SOC avec Splunk :
-
-1. 🔍 **Détection** — Identifier l'activité suspecte (erreurs 404, fichiers sensibles)
-2. 🔬 **Analyse** — Comprendre le comportement complet (stats, top, timechart)
-3. 🛡️ **Surveillance** — Automatiser la détection pour ne plus jamais manquer une attaque
+Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réussi à obtenir `/passwords.pdf`, il va changer de tactique — ce que révèlent les investigations Wireshark suivantes.
 
 ---
 
