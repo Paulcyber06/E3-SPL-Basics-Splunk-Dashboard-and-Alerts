@@ -109,7 +109,6 @@ Le dashboard permet la surveillance visuelle. Mais un analyste ne peut pas regar
 
 Dans Splunk : **Save As > Alert** depuis la recherche.
 
-[![Configuration de l'alerte — Alert 404 Recognition Detection](28.png)](28.png)
 
 **Recherche de l'alerte :**
 
@@ -118,6 +117,8 @@ index=main sourcetype=access_combined_wcookie status=404
 | stats count by clientip
 | where count > 15
 ```
+
+[![Configuration de l'alerte — Alert 404 Recognition Detection](28.png)](28.png)
 
 **Paramètres recommandés :**
 
