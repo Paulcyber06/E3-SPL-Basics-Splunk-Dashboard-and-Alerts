@@ -109,8 +109,8 @@ Le dashboard permet la surveillance visuelle. Mais un analyste ne peut pas regar
 
 Dans Splunk : **Save As > Alert** depuis la recherche.
 
-
 **Recherche de l'alerte :**
+
 
 ```
 index=main sourcetype=access_combined_wcookie status=404
@@ -120,17 +120,23 @@ index=main sourcetype=access_combined_wcookie status=404
 
 [![Configuration de l'alerte — Alert 404 Recognition Detection](28.png)](28.png)
 
-**Paramètres recommandés :**
+> ⚠️ **Le throttle par `clientip` est essentiel.** Sans throttle, la même IP pourrait déclencher des dizaines de notifications par heure. Avec throttle, chaque IP ne peut déclencher qu'une notification toutes les 60 minutes maximum.
 
-| Paramètre | Valeur | Justification |
-|-----------|--------|--------------|
-| Alert type | Scheduled | Vérifie toutes les heures |
-| Schedule | Every hour | Détection rapide sans surcharge |
-| Trigger condition | count > 15 | Seuil au-dessus du comportement normal |
-| Throttle | 1 heure par clientip | Évite le spam de notifications |
-| Action | Send email | Notification immédiate à l'équipe SOC |
+**Configuration :**
 
-> ⚠️ **Le throttle par `clientip` est essentiel.** Sans throttle, la même IP pourrait déclencher des dizaines de notifications par heure. Avec throttle, chaque IP ne peut déclencher qu'une notification par heure maximum.
+| Paramètre | Valeur |
+|-----------|--------|
+| Title | Alert - 404 Reconnaissance Detection |
+| Description | Detects source IPs generating more than 15 HTTP 404 errors — potential web reconnaissance activity |
+| Permissions | Shared in App |
+| Alert type | Scheduled |
+| Schedule | Run every hour |
+| Trigger alert when | Number of Results is greater than 0 |
+| Trigger | For each result |
+| Throttle | Activé — 60 minutes |
+| Suppress results containing field value | clientip |
+| Action | Add to Triggered Alerts — severity Medium |
+
 
 ---
 
