@@ -18,14 +18,9 @@
 
 ## 1. Contexte
 
-Dans les épisodes précédents, nous avons :
+Face à la persistance de l'activité suspecte détectée dans les Épisodes 1 et 2, le SOC de Buttercup Games décide de ne plus investiguer manuellement à chaque alerte. Un dashboard de surveillance et des alertes automatiques sont mis en place pour détecter en temps réel toute nouvelle tentative de reconnaissance.
 
-- **Épisode 1** — Détecté l'IP `87.194.216.51` en train de faire de la reconnaissance via des erreurs 404
-- **Épisode 2** — Analysé son comportement complet : 894 accès réussis, double activité suspecte
-
-Le problème : cette investigation a été **manuelle**. Dans un environnement réel, un analyste SOC ne peut pas lancer ces recherches manuellement à chaque heure.
-
-La solution : **automatiser la surveillance** avec un dashboard et une alerte qui se déclenchent sans intervention humaine.
+Ce dispositif sera décisif dans la suite de l'investigation — l'attaquant va changer de tactique.
 
 ---
 
