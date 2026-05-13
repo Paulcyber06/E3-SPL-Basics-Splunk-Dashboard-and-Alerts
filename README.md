@@ -1,4 +1,4 @@
-# SPL Basics — Épisode 3 : Dashboard de Surveillance & Alertes Automatiques
+# Épisode 3 — Splunk : Analyse Comportementale d'une IP Suspecte
 
 > Face à la persistance des attaques contre **Buttercup Games**, le SOC automatise la surveillance — dashboard de monitoring et alerte en temps réel pour ne plus jamais manquer une activité suspecte.
 
