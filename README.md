@@ -171,11 +171,17 @@ Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réu
 
 ---
 
-## 🔗 Navigation
+<div align="center">
+
+---
+
+### 🔗 Navigation
 
 | ⬅️ Épisode précédent | ➡️ Épisode suivant |
-|---|---|
-| [E3 — Splunk : Analyse Comportementale](https://github.com/Paulcyber06/E3-Splunk-Behavioral-Analysis) | [E5 — Wireshark : Brute Force FTP](https://github.com/Paulcyber06/E5-Wireshark-FTP-Brute-Force) |
+|:---:|:---:|
+| [← E3 — Splunk : Analyse Comportementale](https://github.com/Paulcyber06/E3-Splunk-Behavioral-Analysis) | [E5 — Wireshark : Brute Force FTP →](https://github.com/Paulcyber06/E5-Wireshark-FTP-Brute-Force) |
+
+</div>
 
 ---
 
