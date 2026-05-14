@@ -49,8 +49,6 @@ Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404
 
 On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 
-[![Sauvegarde dans le dashboard Web Reconnaissance](3.png)](3.png)
-
 **Paramètres du dashboard :**
 
 | Paramètre | Valeur |
@@ -58,6 +56,8 @@ On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 | Dashboard Title | SOC — Web Reconnaissance Monitoring |
 | Dashboard type | Classic Dashboards |
 | Permissions | Private |
+
+[![Sauvegarde dans le dashboard Web Reconnaissance](3.png)](3.png)
 
 Quand c'est prêt, on clique sur Save to Dashboard.
 
