@@ -169,18 +169,13 @@ Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux e
 
 Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réussi à obtenir `/passwords.pdf`, il va changer de tactique — ce que révèlent les investigations Wireshark suivantes.
 
----
-
 <div align="center">
+<br>
 
----
+[![⬅️ Précédent](https://img.shields.io/badge/⬅️%20Précédent--grey?style=for-the-badge)](https://github.com/Paulcyber06/E3-Splunk-Behavioral-Analysis)
+[![➡️ Suivant](https://img.shields.io/badge/➡️%20Suivant--blue?style=for-the-badge)](https://github.com/Paulcyber06/E5-Wireshark-FTP-Brute-Force)
 
-### 🔗 Navigation
-
-| ⬅️ Épisode précédent | ➡️ Épisode suivant |
-|:---:|:---:|
-| [← E3 — Splunk : Analyse Comportementale](https://github.com/Paulcyber06/E3-Splunk-Behavioral-Analysis) | [E5 — Wireshark : Brute Force FTP →](https://github.com/Paulcyber06/E5-Wireshark-FTP-Brute-Force) |
-
+<br>
 </div>
 
 ---
