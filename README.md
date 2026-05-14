@@ -34,12 +34,19 @@ index=main sourcetype=access_combined_wcookie status=404
 | sort -count
 | head 10
 ```
+<br>
 
 [![Création de la recherche Top 10 IPs](1.png)](1.png)
 
+<br>
+
 Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404 — les candidates les plus suspectes pour une activité de reconnaissance. On sauvegarde ce rapport via **Save As > Report** avec le titre **Top 10 IPs — 404 Errors**.
 
+<br>
+
 [![Tableau Top 10 IPs — 404 Errors](2.png)](2.png)
+
+<br>
 
 > ⚠️ L'IP `87.194.216.51` est en tête avec **40 erreurs 404** — confirmant qu'elle reste la plus suspecte de l'ensemble du trafic.
 
@@ -57,11 +64,19 @@ On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 | Dashboard type | Classic Dashboards |
 | Permissions | Private |
 
+<br>
+
 [![Sauvegarde dans le dashboard Web Reconnaissance](3.png)](3.png)
+
+<br>
 
 Quand c'est prêt, on clique sur Save to Dashboard.
 
+<br>
+
 [![Dashboard Web Reconnaissance — vue tableau](4.png)](4.png)
+
+<br>
 
 Le dashboard est maintenant sauvegardé.
 
@@ -82,7 +97,11 @@ index=main sourcetype=access_combined_wcookie status=404
 - `span=1d` — regroupe les événements par jour
 - `count` — compte le nombre d'erreurs 404 par jour
 
+<br>
+
 [![Création du rapport 404 Errors Evolution](5.png)](5.png)
+
+<br>
 
 **Ce que le graphique révèle :**
 
@@ -114,8 +133,11 @@ index=main sourcetype=access_combined_wcookie status=404
 ```
 Dans Splunk : **Save As > Alert** depuis la recherche.
 
+<br>
 
 [![Configuration de l'alerte — Alert 404 Recognition Detection](28.png)](28.png)
+
+<br>
 
 > ⚠️ **Le throttle par `clientip` est essentiel.** Sans throttle, la même IP pourrait déclencher des dizaines de notifications par heure. Avec throttle, chaque IP ne peut déclencher qu'une notification toutes les 60 minutes maximum.
 
@@ -141,7 +163,11 @@ Le Dashboard est maintenant prêt à fonctionner.
 
 Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux en une vue unique :
 
+<br>
+
 [![Dashboard SOC — Vue complète](6.png)](6.png)
+
+<br>
 
 **Structure du dashboard :**
 
