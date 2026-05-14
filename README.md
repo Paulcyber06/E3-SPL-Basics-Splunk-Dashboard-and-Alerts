@@ -185,6 +185,8 @@ Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux e
 
 > 🟢 **La surveillance manuelle est maintenant remplacée par une infrastructure automatisée.**
 
+<br>
+
 | Élément mis en place | Bénéfice |
 |---------------------|---------|
 | Rapport Top 10 IPs | Identification immédiate des IPs suspectes |
@@ -192,6 +194,8 @@ Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux e
 | Dashboard SOC | Vue unifiée sans recherche manuelle |
 | Alerte automatique | Notification en temps réel sans surveillance permanente |
 | Throttle par IP | Zéro spam — une notification par IP par heure |
+
+<br>
 
 Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réussi à obtenir `/passwords.pdf`, il va changer de tactique — ce que révèlent les investigations Wireshark suivantes.
 
