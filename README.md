@@ -173,7 +173,7 @@ Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réu
 <br>
 
 [![⬅️ Précédent](https://img.shields.io/badge/⬅️%20Précédent--grey?style=for-the-badge)](https://github.com/Paulcyber06/E3-Splunk-Behavioral-Analysis)
-[![➡️ Suivant](https://img.shields.io/badge/➡️%20Suivant--blue?style=for-the-badge)](https://github.com/Paulcyber06/E5-Wireshark-FTP-Brute-Force)
+[![➡️ Suivant](https://img.shields.io/badge/➡️%20Suivant--grey?style=for-the-badge)](https://github.com/Paulcyber06/E5-Wireshark-FTP-Brute-Force)
 
 <br>
 </div>
