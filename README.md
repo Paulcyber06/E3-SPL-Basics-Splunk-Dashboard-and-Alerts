@@ -61,11 +61,10 @@ On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 
 Quand c'est prêt, on clique sur Save to Dashboard.
 
-
 [![Dashboard Web Reconnaissance — vue tableau](4.png)](4.png)
 
+Le dashboard est maintenant sauvegardé.
 
-Le Dashboard est maintenant sauvegardé.
 ---
 
 ## 4. Création du rapport temporel
