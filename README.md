@@ -59,6 +59,8 @@ On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 | Dashboard type | Classic Dashboards |
 | Permissions | Private |
 
+Quand c'est prêt, on clique sur Save to Dashboard.
+
 Le Dashboard est maintenant sauvegardé.
 
 [![Dashboard Web Reconnaissance — vue tableau](4.png)](4.png)
