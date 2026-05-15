@@ -60,13 +60,13 @@ On l'ajoute maintenant au dashboard via **Add to Dashboard > New Dashboard**.
 
 | Paramètre | Valeur |
 |-----------|--------|
-| Dashboard Title | SOC — Web Reconnaissance Monitoring |
+| Dashboard Title | SOC — Web Recognition Monitoring |
 | Dashboard type | Classic Dashboards |
 | Permissions | Private |
 
 <br>
 
-[![Sauvegarde dans le dashboard Web Reconnaissance](3.png)](3.png)
+[![Sauvegarde dans le dashboard Web Recognition](3.png)](3.png)
 
 <br>
 
@@ -145,7 +145,7 @@ Dans Splunk : **Save As > Alert** depuis la recherche.
 
 | Paramètre | Valeur |
 |-----------|--------|
-| Title | Alert - 404 Reconnaissance Detection |
+| Title | Alert - 404 Recognition Detection |
 | Permissions | Shared in App |
 | Alert type | Scheduled |
 | Schedule | Run every hour |
@@ -161,7 +161,7 @@ Le Dashboard est maintenant prêt à fonctionner.
 
 ## 6. Dashboard final
 
-Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux en une vue unique :
+Le dashboard **SOC — Web Recognition Monitoring** regroupe les 3 panneaux en une vue unique :
 
 <br>
 
