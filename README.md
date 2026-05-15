@@ -121,6 +121,25 @@ index=main sourcetype=access_combined_wcookie status=404
 
 On sauvegarde ce rapport avec le titre **404 Errors Evolution — 7 Days** et on l'ajoute au dashboard existant.
 
+<br>
+
+
+## 4b. Création du rapport de distribution des status codes
+
+Pour contextualiser les erreurs 404 dans le trafic global, on ajoute un troisième panneau au dashboard :
+
+```spl
+index=main sourcetype=access_combined_wcookie
+| stats count by status
+| sort -count
+```
+
+**Ce que fait cette commande :**
+- `stats count by status` — compte le nombre d'événements par code HTTP
+- `sort -count` — trie par ordre décroissant
+
+On sauvegarde ce rapport avec le titre **Status Codes Distribution** et on l'ajoute au dashboard existant en Bar Chart.
+
 ---
 
 ## 5. Création de l'alerte
