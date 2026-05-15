@@ -1,6 +1,6 @@
 # Épisode 4 — Splunk : Dashboard de Surveillance & Alertes
 
-> Face à la persistance des attaques contre **Buttercup Games**, le SOC automatise la surveillance — dashboard de monitoring et alerte en temps réel pour ne plus jamais manquer une activité suspecte.
+> Face à la persistance des attaques contre **Buttercup Games**, le SOC automatise la surveillance. Nous allons créer un dashboard de monitoring et alerte en temps réel pour ne plus jamais manquer une activité suspecte.
 
 ---
 
@@ -40,7 +40,7 @@ index=main sourcetype=access_combined_wcookie status=404
 
 <br>
 
-Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404 — les candidates les plus suspectes pour une activité de reconnaissance. On sauvegarde ce rapport via **Save As > Report** avec le titre **Top 10 IPs — 404 Errors**.
+Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404 ainsiq que les candidates les plus suspectes pour une activité de reconnaissance. On sauvegarde ce rapport via **Save As > Report** avec le titre **Top 10 IPs — 404 Errors**.
 
 <br>
 
@@ -48,7 +48,7 @@ Ce rapport retourne les **10 adresses IP** ayant généré le plus d'erreurs 404
 
 <br>
 
-> ⚠️ L'IP `87.194.216.51` est en tête avec **40 erreurs 404** — confirmant qu'elle reste la plus suspecte de l'ensemble du trafic.
+> ⚠️ L'IP `87.194.216.51` est en tête avec **40 erreurs 404**, confirmant qu'elle reste la plus suspecte de l'ensemble du trafic.
 
 ---
 
@@ -112,11 +112,11 @@ index=main sourcetype=access_combined_wcookie status=404
 | Mercredi 6 mai | 224 | Premier pic |
 | Jeudi 7 mai | 192 | Légère baisse |
 | Vendredi 8 mai | 174 | Baisse continue |
-| Samedi 9 mai | 216 | Rebond — activité week-end |
-| Dimanche 10 mai | 188 | Maintien week-end |
+| Samedi 9 mai | 216 | Rebond d'activité le week-end |
+| Dimanche 10 mai | 188 | Maintien le week-end |
 | Lundi 11 mai | 136 | Diminution |
 
-> ⚠️ **Une activité soutenue le week-end (samedi 9 mai : 216 erreurs, dimanche 10 mai : 188 erreurs)** est un indicateur important. Un trafic d'erreurs normal diminue le week-end — ici ce n'est pas le cas.
+> ⚠️ **Une activité soutenue le week-end (samedi 9 mai : 216 erreurs, dimanche 10 mai : 188 erreurs)** est un indicateur important. Un trafic d'erreurs normal diminue le week-end. Ici ce n'est pas le cas.
 
 
 On sauvegarde ce rapport avec le titre **404 Errors Evolution — 7 Days** et on l'ajoute au dashboard existant.
@@ -154,6 +154,7 @@ index=main sourcetype=access_combined_wcookie status=404
 | stats count by clientip
 | where count > 15
 ```
+
 Dans Splunk : **Save As > Alert** depuis la recherche.
 
 <br>
@@ -174,7 +175,7 @@ Dans Splunk : **Save As > Alert** depuis la recherche.
 | Schedule | Run every hour |
 | Trigger alert when | Number of Results is greater than 0 |
 | Trigger | For each result |
-| Throttle | Activé — 60 minutes |
+| Throttle | Activé sur 60 minutes |
 | Suppress results containing field value | clientip |
 | Action | Add to Triggered Alerts — severity Medium |
 
@@ -216,11 +217,11 @@ Le dashboard **SOC — Web Recognition Monitoring** regroupe les 3 panneaux en u
 | Rapport évolution temporelle | Détection des tendances et comportements inhabituels |
 | Dashboard SOC | Vue unifiée sans recherche manuelle |
 | Alerte automatique | Notification en temps réel sans surveillance permanente |
-| Throttle par IP | Zéro spam — une notification par IP par heure |
+| Throttle par IP | Zéro spam avec une notification par IP par heure |
 
 <br>
 
-Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réussi à obtenir `/passwords.pdf`, il va changer de tactique — ce que révèlent les investigations Wireshark suivantes.
+Cette étape conclut la phase de détection Splunk. L'attaquant n'ayant pas réussi à obtenir le Fichier `/passwords.pdf`, va changer de tactique. C'est ce que vont révéler les investigations Wireshark suivantes.
 
 <div align="center">
 <br>
