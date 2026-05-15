@@ -106,14 +106,18 @@ index=main sourcetype=access_combined_wcookie status=404
 **Ce que le graphique révèle :**
 
 | Jour | Erreurs 404 | Observation |
-|------|------------|-------------|
-| Mardi 5 mai | 76 | Début d'activité |
+| --- | --- | --- |
+| Lundi 4 mai | 56 | Début d'activité |
+| Mardi 5 mai | 194 | Montée rapide |
 | Mercredi 6 mai | 224 | Premier pic |
-| Vendredi 8 mai | 174 | Légère baisse |
+| Jeudi 7 mai | 192 | Légère baisse |
+| Vendredi 8 mai | 174 | Baisse continue |
 | Samedi 9 mai | 216 | Rebond — activité week-end |
+| Dimanche 10 mai | 188 | Maintien week-end |
 | Lundi 11 mai | 136 | Diminution |
 
-> ⚠️ **Une activité soutenue le week-end (samedi 9 mai : 216 erreurs)** est un indicateur important. Un trafic d'erreurs normal diminue le week-end — ici ce n'est pas le cas.
+> ⚠️ **Une activité soutenue le week-end (samedi 9 mai : 216 erreurs, dimanche 10 mai : 188 erreurs)** est un indicateur important. Un trafic d'erreurs normal diminue le week-end — ici ce n'est pas le cas.
+
 
 On sauvegarde ce rapport avec le titre **404 Errors Evolution — 7 Days** et on l'ajoute au dashboard existant.
 
