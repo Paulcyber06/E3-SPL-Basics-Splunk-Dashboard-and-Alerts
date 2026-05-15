@@ -20,7 +20,7 @@
 
 Face à la persistance de l'activité suspecte détectée dans les Épisodes 1 et 2, le SOC de Buttercup Games décide de ne plus investiguer manuellement à chaque alerte. Un dashboard de surveillance et des alertes automatiques sont mis en place pour détecter en temps réel toute nouvelle tentative de reconnaissance.
 
-Ce dispositif sera décisif dans la suite de l'investigation — l'attaquant va changer de tactique.
+Ce dispositif sera décisif dans la suite de l'investigation : l'attaquant va changer de tactique.
 
 ---
 
