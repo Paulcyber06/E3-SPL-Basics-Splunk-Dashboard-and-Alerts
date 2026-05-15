@@ -165,7 +165,7 @@ Le dashboard **SOC — Web Reconnaissance Monitoring** regroupe les 3 panneaux e
 
 <br>
 
-[![Dashboard SOC — Vue complète](6.png)](6.png)
+[![Dashboard SOC — Vue complète](SOC - Web Recognition Monitoring.png)](SOC - Web Recognition Monitoring.png)
 
 <br>
 
